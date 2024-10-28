@@ -8,7 +8,7 @@ class NaiveBayesClass:
     def __init__(self):
         # create TfIdfClass instance
         self.tfidf = TfIdfClass()
-        df = pd.read_csv("test2.csv")
+        df = pd.read_csv("amazonreviews.csv")
         self.sentences = df["review"].to_numpy()
         self.label = df["label"].to_numpy()
         # sample dataset for testing
