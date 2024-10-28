@@ -1,6 +1,6 @@
 import React from "react";
 interface Product {
-  image: string;
+  image?: string;
   name: string;
   price: string;
 }

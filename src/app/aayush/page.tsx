@@ -1,6 +1,5 @@
-import Header from "@/components/Header";
 import React from "react";
-
+import { Header, Card, SideMenu, products } from "@/index";
 const page = () => {
   return (
     <div>
