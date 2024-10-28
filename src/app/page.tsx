@@ -5,7 +5,7 @@ import { useState } from "react";
 import { products } from "../products/products.js";
 import { Button } from "@mui/material";
 import SideMenu from "@/components/SideMenu";
-
+import Header from "@/components/Header";
 export default function Home() {
   const [sentence, setSentence] = useState("");
   const [sentiment, setSentiment] = useState(null);
@@ -21,11 +21,7 @@ export default function Home() {
   // }
   return (
     <>
-      {/* <Button variant="contained">Contained</Button>
-      {products.map((product, i) => {
-        return <Card product={products[i]} key={i} />;
-      })} */}
-      <SideMenu />
+      <Header />
     </>
   );
 }
