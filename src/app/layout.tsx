@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-// import "@/css/SideMenu.css";
+import "../css/sidebar.css";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/helper/theme";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
           <title>Ecom</title>
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         </head>
-        <body>{children}</body>
+        <body className="min-h-screen min-w-screen">{children}</body>
       </html>
     </ThemeProvider>
   );
