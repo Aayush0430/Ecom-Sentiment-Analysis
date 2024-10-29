@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+// import "@/css/SideMenu.css";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/helper/theme";
 

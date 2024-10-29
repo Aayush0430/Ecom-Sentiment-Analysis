@@ -1,7 +1,11 @@
 import React from "react";
-
+import { SideMenu } from "@/index";
 const page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <SideMenu />
+    </div>
+  );
 };
 
 export default page;
