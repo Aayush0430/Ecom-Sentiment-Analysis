@@ -29,7 +29,7 @@ const SideMenu = () => {
     };
   };
 
-  const removeSidebar = () => {
+  const removeSidebar = (e: any) => {
     const sidebar = document.querySelector(".sidebar");
     if (sidebar) {
       sidebar.classList.remove("showsidebar");
@@ -44,8 +44,12 @@ const SideMenu = () => {
     };
   }, [rangeValues]);
   useEffect(() => {
-    const body = document.querySelector("body");
-    body?.addEventListener("click", removeSidebar);
+    const testdiv = document.querySelector(".testdiv");
+    testdiv?.addEventListener("click", removeSidebar);
+
+    return () => {
+      testdiv?.removeEventListener("click", removeSidebar);
+    };
   }, []);
   return (
     <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed overflow-y-auto">

@@ -18,7 +18,7 @@ export default function RootLayout({
           <title>Ecom</title>
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         </head>
-        <body className="min-h-screen min-w-screen">{children}</body>
+        <body className="mainbody min-h-screen min-w-screen">{children}</body>
       </html>
     </ThemeProvider>
   );

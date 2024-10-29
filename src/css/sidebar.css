@@ -14,8 +14,10 @@
 }
 
 .sidebar {
+  background: white;
   transform: translateX(-100%);
   transition: all 0.3s ease;
+  z-index: 20;
 }
 .showsidebar {
   transform: translateX(0);

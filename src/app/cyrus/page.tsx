@@ -15,6 +15,7 @@ const page = () => {
       <Button onClick={handleBurgerclick}>
         <MenuIcon sx={{ cursor: "pointer" }} />
       </Button>
+      <div className="testdiv w-screen min-h-screen bg-gray-100">asd</div>
       <SideMenu />
     </div>
   );
