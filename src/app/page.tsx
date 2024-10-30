@@ -6,6 +6,7 @@ import { products } from "../products/products.js";
 import { Button } from "@mui/material";
 import SideMenu from "@/components/SideMenu";
 import Header from "@/components/Header";
+import LandingPage from "@/pages/LandingPage";
 export default function Home() {
   const [sentence, setSentence] = useState("");
   const [sentiment, setSentiment] = useState(null);
@@ -19,5 +20,9 @@ export default function Home() {
   //   setSentiment(data.sentiment);
   //   setLoading(false);
   // }
-  return <></>;
+  return (
+    <>
+      <LandingPage />
+    </>
+  );
 }

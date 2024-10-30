@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "../css/sidebar.css";
+import "../css/landingpage.css";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/helper/theme";
 import Header from "@/components/Header";
