@@ -11,6 +11,7 @@ import Checkbox from "@mui/material/Checkbox";
 import CloseIcon from "@mui/icons-material/Close";
 
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import Link from "next/link";
 
 const SideMenu = () => {
   const [rangeValues, setRangeValues] = useState<number[]>([500, 30000]);
@@ -68,7 +69,7 @@ const SideMenu = () => {
         onClick={removeSidebar}
         className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen absolute"
       ></div>
-      <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed overflow-y-auto overflow-x-hidden">
+      <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed top-0 overflow-y-auto overflow-x-hidden">
         <div className="hello-user sticky top-0 h-[70px] bg-[rgb(50,50,50)] flex items-center justify-between">
           <p className="ml-7 text-xl text-white font-bold">Hello, User</p>
           <Button onClick={removeSidebar}>
@@ -76,6 +77,26 @@ const SideMenu = () => {
               sx={{ color: "white", fontSize: "2rem", marginRight: "1rem" }}
             />
           </Button>
+        </div>
+        <div className="flex flex-col">
+          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+            <Link href="/aayush">Aayush</Link>
+            <KeyboardArrowRightIcon
+              sx={{ fontSize: "1.4rem", color: "gray" }}
+            />
+          </div>
+          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+            <Link href="/pramit">Pramit</Link>
+            <KeyboardArrowRightIcon
+              sx={{ fontSize: "1.4rem", color: "gray" }}
+            />
+          </div>
+          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+            <Link href="/cyrus">Aayush</Link>
+            <KeyboardArrowRightIcon
+              sx={{ fontSize: "1.4rem", color: "gray" }}
+            />
+          </div>
         </div>
         {/* category section */}
         <div className="category-section ">
