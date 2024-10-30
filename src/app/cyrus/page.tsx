@@ -6,8 +6,13 @@ import { Button } from "@mui/material";
 const page = () => {
   function handleBurgerclick() {
     const sidebar = document.querySelector(".sidebar");
+    const closeDiv = document.querySelector(".close-div");
     if (sidebar) {
       sidebar.classList.add("showsidebar");
+    }
+    if (closeDiv) {
+      closeDiv.classList.remove("hidden");
+      closeDiv.classList.add("flex");
     }
   }
   return (
@@ -15,7 +20,6 @@ const page = () => {
       <Button onClick={handleBurgerclick}>
         <MenuIcon sx={{ cursor: "pointer" }} />
       </Button>
-      <div className="testdiv w-screen min-h-screen bg-gray-100">asd</div>
       <SideMenu />
     </div>
   );
