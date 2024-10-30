@@ -6,7 +6,9 @@ const Cart = () => {
     <>
       <div className="w-4/5 mx-auto mt-[50px] h-auto p-[10px] bg-gray-0 border font-semibold rounded-[10px]">
         <div>
-          <p className="text-[2rem] ml-10 pt-[20px] poppins ">Shopping Cart</p>
+          <p className="text-[1.7rem] ml-10 pt-[20px] poppins ">
+            Shopping Cart
+          </p>
           <Divider sx={{ margin: "20px" }} />
         </div>
         <div className="flex">
