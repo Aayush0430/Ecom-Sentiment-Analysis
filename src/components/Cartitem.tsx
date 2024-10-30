@@ -12,7 +12,7 @@ const Cartitem = () => {
           <img
             src="https://nobero.com/cdn/shop/files/black_e4d19185-c19d-4e7c-a14a-8d2a29c7bad3.jpg?v=1711976456"
             alt=""
-            className="h-[150px] w-[150px] object-cover rounded-[10%] bg-gray-300 mix-blend-mode"
+            className="h-[150px] w-[150px] object-cover rounded-[10%] bg-gray-300 hover:scale-105 transition duration-75"
           />
         </div>
         <div className="ml-[50px] mt-[10px] relative w-[70%]">
@@ -27,7 +27,7 @@ const Cartitem = () => {
             />
             In stock
           </p>
-          <CloseIcon className="text-[1.2rem] absolute top-[5px] right-[20px] " />
+          <CloseIcon className="text-[1.2rem] absolute top-[5px] right-[20px] cursor-pointer hover:rotate-90 hover:scale-150 hover:text-red-600 transition duration-150" />
         </div>
       </div>
       <Divider sx={{ margin: "20px" }} />

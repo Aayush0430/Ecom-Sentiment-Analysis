@@ -1,5 +1,5 @@
 import React from "react";
-import { Cartitem } from "@/index";
+import { Cartitem, Cartbill } from "@/index";
 import { Divider } from "@mui/material";
 const Cart = () => {
   return (
@@ -14,8 +14,8 @@ const Cart = () => {
             <Cartitem />
             <Cartitem />
           </div>
-          <div id="bill" className="w-[40%] h-[400px] bg-red-300">
-            hi
+          <div id="bill" className="w-[40%] h-[400px] ">
+            <Cartbill />
           </div>
         </div>
       </div>

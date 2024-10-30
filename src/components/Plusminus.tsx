@@ -14,17 +14,17 @@ const Plusminus = () => {
     setQuantity((prevQuantity) => Math.max(prevQuantity - 1, 1));
   };
   return (
-    <div className="flex items-center space-x-2 bg-gray-200 rounded ">
+    <div className="flex items-center space-x-2 bg-gray-50 border hover:bg-gray-100  rounded ">
       <button
         onClick={decreaseQuantity}
-        className="bg-gray-300 text-gray-500 rounded px-3 py-1"
+        className="hover:bg-gray-200 text-gray-500 rounded px-3 py-1"
       >
         -
       </button>
-      <span className="text-l">{quantity}</span>
+      <span className="text-l text-gray-600 poppins">{quantity}</span>
       <button
         onClick={increaseQuantity}
-        className="bg-gray-300 text-gray-500 rounded px-3 py-1"
+        className="hover:bg-gray-200 text-gray-500 rounded px-3 py-1"
       >
         +
       </button>
