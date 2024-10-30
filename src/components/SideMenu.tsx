@@ -79,24 +79,30 @@ const SideMenu = () => {
           </Button>
         </div>
         <div className="flex flex-col">
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/aayush">Aayush</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/pramit">Pramit</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/cyrus">Aayush</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
+          <Link href="/aayush">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Aayush
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
+          <Link href="/pramit">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Pramit
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
+          <Link href="/cyrus">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Cyrus
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
         </div>
         {/* category section */}
         <div className="category-section ">

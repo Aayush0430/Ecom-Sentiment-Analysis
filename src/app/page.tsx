@@ -19,10 +19,5 @@ export default function Home() {
   //   setSentiment(data.sentiment);
   //   setLoading(false);
   // }
-  return (
-    <>
-      <Header />
-      <SideMenu />
-    </>
-  );
+  return <></>;
 }
