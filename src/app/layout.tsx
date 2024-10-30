@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material";
 import { theme } from "@/helper/theme";
 import Header from "@/components/Header";
 import SideMenu from "@/components/SideMenu";
-
+import "../css/product.css";
 export default function RootLayout({
   children,
 }: Readonly<{
