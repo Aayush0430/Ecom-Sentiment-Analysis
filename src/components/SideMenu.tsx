@@ -61,8 +61,8 @@ const SideMenu = () => {
     <>
       <div
         onClick={removeSidebar}
-        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen fixed"
-        style={{ zIndex: "15" }}
+        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen fixed top-0"
+        style={{ zIndex: "40" }}
       ></div>
       <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed top-0 overflow-y-auto overflow-x-hidden">
         <div className="hello-user sticky top-0 h-[70px] bg-[rgb(50,50,50)] flex items-center justify-between">
