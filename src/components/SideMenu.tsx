@@ -40,12 +40,14 @@ const SideMenu = () => {
   const removeSidebar = (e: any) => {
     const sidebar = document.querySelector(".sidebar");
     const closeDiv = document.querySelector(".close-div");
+    const body = document.querySelector("body");
     if (sidebar) {
       sidebar.classList.remove("showsidebar");
     }
     if (closeDiv) {
       closeDiv.classList.add("hidden");
     }
+    body?.classList.remove("overflow-hidden");
   };
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -55,19 +57,12 @@ const SideMenu = () => {
       clearTimeout(timer);
     };
   }, [rangeValues]);
-  useEffect(() => {
-    const testdiv = document.querySelector(".testdiv");
-    testdiv?.addEventListener("click", removeSidebar);
-
-    return () => {
-      testdiv?.removeEventListener("click", removeSidebar);
-    };
-  }, []);
   return (
     <>
       <div
         onClick={removeSidebar}
-        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen absolute"
+        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen fixed"
+        style={{ zIndex: "15" }}
       ></div>
       <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed top-0 overflow-y-auto overflow-x-hidden">
         <div className="hello-user sticky top-0 h-[70px] bg-[rgb(50,50,50)] flex items-center justify-between">
