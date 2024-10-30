@@ -1,9 +1,10 @@
 import React from "react";
-import { Header, Card, SideMenu, products } from "@/index";
+import { Header, Card, Cart, SideMenu, products } from "@/index";
 const page = () => {
   return (
     <div>
       <Header />
+      <Cart />
     </div>
   );
 };
