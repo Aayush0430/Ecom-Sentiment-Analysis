@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
@@ -9,6 +10,7 @@ const Header = () => {
   function handleBurgerclick() {
     const sidebar = document.querySelector(".sidebar");
     const closeDiv = document.querySelector(".close-div");
+    const body = document.querySelector("body");
     if (sidebar) {
       sidebar.classList.add("showsidebar");
     }
@@ -16,6 +18,7 @@ const Header = () => {
       closeDiv.classList.remove("hidden");
       closeDiv.classList.add("flex");
     }
+    body?.classList.add("overflow-hidden");
   }
   return (
     <>

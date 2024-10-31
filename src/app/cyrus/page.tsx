@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { SideMenu } from "@/index";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
+import { removeSidebar } from "@/helper/removeSidebar";
 const page = () => {
   function handleBurgerclick() {
     const sidebar = document.querySelector(".sidebar");
@@ -15,6 +16,10 @@ const page = () => {
       closeDiv.classList.add("flex");
     }
   }
+  useEffect(() => {
+    removeSidebar();
+  }, []);
+
   return (
     <div className="flex">
       <Button onClick={handleBurgerclick}>

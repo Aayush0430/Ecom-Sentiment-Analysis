@@ -40,12 +40,14 @@ const SideMenu = () => {
   const removeSidebar = (e: any) => {
     const sidebar = document.querySelector(".sidebar");
     const closeDiv = document.querySelector(".close-div");
+    const body = document.querySelector("body");
     if (sidebar) {
       sidebar.classList.remove("showsidebar");
     }
     if (closeDiv) {
       closeDiv.classList.add("hidden");
     }
+    body?.classList.remove("overflow-hidden");
   };
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -55,19 +57,12 @@ const SideMenu = () => {
       clearTimeout(timer);
     };
   }, [rangeValues]);
-  useEffect(() => {
-    const testdiv = document.querySelector(".testdiv");
-    testdiv?.addEventListener("click", removeSidebar);
-
-    return () => {
-      testdiv?.removeEventListener("click", removeSidebar);
-    };
-  }, []);
   return (
     <>
       <div
         onClick={removeSidebar}
-        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen absolute"
+        className="close-div bg-[rgb(0,0,0,.5)] hidden h-screen w-screen fixed top-0"
+        style={{ zIndex: "40" }}
       ></div>
       <div className="sidebar fixed-scrollbar w-[300px] h-[100vh] fixed top-0 overflow-y-auto overflow-x-hidden">
         <div className="hello-user sticky top-0 h-[70px] bg-[rgb(50,50,50)] flex items-center justify-between">
@@ -79,24 +74,30 @@ const SideMenu = () => {
           </Button>
         </div>
         <div className="flex flex-col">
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/aayush">Aayush</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/pramit">Pramit</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
-          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-            <Link href="/cyrus">Aayush</Link>
-            <KeyboardArrowRightIcon
-              sx={{ fontSize: "1.4rem", color: "gray" }}
-            />
-          </div>
+          <Link href="/aayush">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Aayush
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
+          <Link href="/pramit">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Pramit
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
+          <Link href="/cyrus">
+            <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+              Cyrus
+              <KeyboardArrowRightIcon
+                sx={{ fontSize: "1.4rem", color: "gray" }}
+              />
+            </div>
+          </Link>
         </div>
         {/* category section */}
         <div className="category-section ">

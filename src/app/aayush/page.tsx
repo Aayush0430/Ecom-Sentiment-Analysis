@@ -1,3 +1,4 @@
+import Cart from "@/components/Cart";
 import React from "react";
 import { Card } from "@/index";
 const page = () => {

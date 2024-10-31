@@ -1,0 +1,14 @@
+.display-image {
+  height: 300px;
+  background: #edd85e;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 1rem;
+  border-radius: 1rem;
+}
+.landing-text {
+  font-family: "Carter One", system-ui;
+  color: black;
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Rubik Wet Paint", system-ui; */
+}
