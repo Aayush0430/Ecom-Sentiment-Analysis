@@ -9,11 +9,13 @@ import Cartbill from "@/components/Cartbill";
 import ContactInformation from "./pages/checkout/ContactInformation";
 import OrderSummary from "./pages/checkout/OrderSummary";
 import SummaryCart from "./components/SummaryCart";
+import Product from "./components/Product";
 import { removeSidebar } from "./helper/removeSidebar";
 
 // import Card from "@/components/Card"
 export {
   Header,
+  Product,
   SideMenu,
   Plusminus,
   Cartbill,
