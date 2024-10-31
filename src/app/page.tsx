@@ -23,6 +23,8 @@ export default function Home() {
     <>
       <Header />
       <SideMenu />
+
+      <p className="mx-auto my-auto text-[2rem]">HOME PAGE</p>
     </>
   );
 }

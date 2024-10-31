@@ -7,14 +7,14 @@ interface Product {
 
 const Card: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className="w-[300px] rounded overflow-hidden shadow-lg p-3 bg-white">
+    <div className="w-[300px] rounded-2xl overflow-hidden shadow-lg p-3 bg-white">
       <img
         className="w-full h-48 object-contain"
         src={product.image}
         alt={product.name}
       />
       <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2">{product.name}</h3>
+        <h3 className="font-bold text-xl mb-2 mx-auto">{product.name}</h3>
         <p className="text-gray-700 text-base">Rs. {product.price}</p>
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-center items-center">
