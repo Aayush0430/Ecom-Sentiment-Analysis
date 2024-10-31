@@ -8,7 +8,6 @@ const LandingPage = () => {
           Unleash Your
         </p>
         <p className="landing-text text-5xl font-bold ml-32">
-          {" "}
           Shopping Experience!
         </p>
       </div>
