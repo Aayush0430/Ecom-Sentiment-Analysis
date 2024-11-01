@@ -1,7 +1,10 @@
-import Cart from "@/components/Cart";
-import React from "react";
-import { Card } from "@/index";
+"use client";
+import React, { useEffect } from "react";
+import { removeSidebar } from "@/index";import { Card } from "@/index";
 const page = () => {
+  useEffect(() => {
+    removeSidebar();
+  }, []);
   return (
     <div>
       <div className="ml-10 mt-10 flex bg-red-200">

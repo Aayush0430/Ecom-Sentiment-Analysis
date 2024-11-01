@@ -1,10 +1,15 @@
-import Product from "@/components/Product";
-import React from "react";
-
+"use client";
+import React, { useEffect } from "react";
+import { removeSidebar, Product } from "@/index";
 const page = () => {
-  return <div>
-    <Product/>
-  </div>;
+  useEffect(() => {
+    removeSidebar();
+  }, []);
+  return (
+    <div>
+      <Product />
+    </div>
+  );
 };
 
 export default page;

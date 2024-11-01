@@ -1,51 +1,51 @@
-section{
-    text-align: center;
+section {
+  text-align: center;
 }
-section h1{
-    font-size: 30px;
+section h1 {
+  font-size: 30px;
 }
-.product-image{
-    align-items: center;
-    width: 30%;
-    margin:auto;
-    height: 400px;
-    border: 1px solid var(--text);
-    border-radius: 10px 0 0 10px;
-    background-repeat: no-repeat;
-    background-size: cover;   
+.product-image {
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  height: 400px;
+  border: 1px solid var(--text);
+  border-radius: 10px 0 0 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.product1{
-    margin-bottom: 10px;
-    background-image: url(https://m.media-amazon.com/images/I/512Xt6UmOqL._AC_UF1000,1000_QL80_.jpg);
+.product1 {
+  margin-bottom: 10px;
+  background-image: url(https://m.media-amazon.com/images/I/512Xt6UmOqL._AC_UF1000,1000_QL80_.jpg);
 }
-.card{
-    display: flex;
-    background-color: var(--white);
-    border: 1px solid black;
-    border-radius: 10px;
-    max-width: 60%;
-    margin: auto;
-    margin-bottom: 10px;
+.card {
+  display: flex;
+  background-color: var(--white);
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
 }
-.inner-card{
-    background-color: beige;
-    display: flex;
-    width: 550px;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
+.inner-card {
+  background-color: beige;
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
 }
-.content{
-    font-family: "montserrat";
-    color: var(--text);
-    margin-bottom: 10px;
+.content {
+  font-family: "montserrat";
+  color: var(--text);
+  margin-bottom: 10px;
 }
 /* .flex{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-} */
+}
 .main-price{
     font-size: 30px;
     font-family: "fraunces";
