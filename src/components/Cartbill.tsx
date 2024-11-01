@@ -2,7 +2,7 @@ import React from "react";
 import { Divider, Button } from "@mui/material";
 const Cartbill = () => {
   return (
-    <div className="bg-gray-200 p-[30px] w-[420px] ml-[30px] mt-[30px] rounded-xl font-light text-[0.9rem]">
+    <div className="bg-[rgb(243,247,255)] p-[30px] w-[420px] ml-[30px] mt-[30px] rounded-xl font-light text-[0.9rem]">
       <p className="poppins font-normal mb-[15px] text-[1.1rem]">
         Order Summary
       </p>

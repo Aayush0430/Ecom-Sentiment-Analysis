@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactInformation = () => {
   return (
-    <div className="w-1/2 h-max bg-white pb-10  px-10 rounded-2xl">
+    <div className="w-1/2 h-max bg-white pb-10 shadow-md px-10 rounded-2xl">
       <p className="text-xl font-bold my-4 poppins">Contact Information</p>
       <div className="name flex justify-between w-full mb-7">
         <TextField
