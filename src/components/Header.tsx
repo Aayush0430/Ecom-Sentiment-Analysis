@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import { Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import SideMenu from "./SideMenu";
 const Header = () => {
   function handleBurgerclick() {
@@ -53,7 +53,7 @@ const Header = () => {
             <PersonOutlineIcon />
           </Link>
           <Link href="/cart">
-            <ShoppingCartIcon />
+            <ShoppingBagOutlinedIcon />
           </Link>
         </div>
       </nav>

@@ -16,7 +16,7 @@ const Card: React.FC<{ product: Product }> = ({ product }) => {
         />
       </div>
       <div className=" flex justify-between mt-[15px] w-full relative">
-        <p className="font-light font-mono text-sm absolute left-2">
+        <p className="font-light font-mono text-sm absolute left-2 poppins">
           {product.name}
         </p>
         <p className="poppins text-sm absolute right-2">Rs. {product.price}</p>
