@@ -24,7 +24,7 @@ const Header = () => {
   }
   return (
     <>
-      <nav className="flex items-center justify-between px-[15px] py-[20px] sticky top-0 z-1 bg-white">
+      <nav className="flex h-[10vh] items-center justify-between px-[15px] py-[20px] sticky top-0 z-1 bg-white">
         <div className=" flex items-center ">
           <Button onClick={handleBurgerclick} sx={{ color: "white" }}>
             <MenuIcon sx={{ cursor: "pointer", color: "black" }} />

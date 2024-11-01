@@ -9,7 +9,7 @@ const Signup = () => {
     removeSidebar();
   }, []);
   return (
-    <section className="h-[90vh] w-screen flex justify-center items-center mb-5">
+    <section className="h-[90vh] w-screen flex justify-center items-center">
       <div className="w-[500px] flex flex-col bg-white  px-10 pb-10 rounded-2xl shadow-md">
         <p className="text-4xl font-bold mx-auto my-5">Signup</p>
         <TextField
