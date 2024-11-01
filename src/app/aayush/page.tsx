@@ -12,7 +12,7 @@ const page = () => {
         <Card
           product={{
             name: "Watch",
-            price: "1200",
+            price: "1300",
             image:
               "https://www.titannepal.com/cdn/shop/files/2648WM04.jpg?v=1716471937",
           }}
