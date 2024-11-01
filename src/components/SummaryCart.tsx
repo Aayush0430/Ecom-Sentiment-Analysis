@@ -4,7 +4,7 @@ import { Plusminus } from "@/index";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import { Close } from "@mui/icons-material";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 const SummaryCart = () => {
   return (
     <div className="w-full poppins">
@@ -17,17 +17,21 @@ const SummaryCart = () => {
           />
         </div>
         <div className="w-[70%] text-md flex flex-col">
-            <p className="font-bold">T-shirt</p>
-            <div className="eachprice-total flex justify-between ">
-                <p className="font-medium text-xs">Rs. 1000</p>
-                <div className="quantity-total flex flex-col">
-                    <p className="text-xs">Quantity: 4</p>
-                    <p className="text-xs">Total: Rs. 5000</p>
-                </div>
+          <p className="font-bold">T-shirt</p>
+          <div className="eachprice-total flex justify-between ">
+            <p className="font-medium text-xs">Rs. 1000</p>
+            <div className="quantity-total flex flex-col">
+              <p className="text-xs">
+                Quantity: <b>4</b>
+              </p>
+              <p className="text-xs">
+                Total: <b>Rs. 5000</b>
+              </p>
             </div>
+          </div>
         </div>
       </div>
-      <Divider sx={{ margin: "20px" }} />
+      <Divider sx={{ margin: "20px 0" }} />
     </div>
   );
 };

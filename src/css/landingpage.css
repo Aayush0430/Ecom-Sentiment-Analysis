@@ -1,8 +1,8 @@
 .display-image {
   height: 300px;
-  background: #dbcbce;
+  /* background: #dbcbce; */
   /* background: linear-gradient(120deg, #7367b4, #7d71c5, #9586eb); */
-  background: linear-gradient(120deg, #d1bdc1, #dbcbce);
+  background: linear-gradient(120deg, #bea8ad, #d1bdc1);
   /* margin-block: 1rem; */
   /* border-radius: 1rem; */
 }
