@@ -7,7 +7,7 @@ interface Product {
 
 const Card: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className="w-max h-max  bg-white p-[15px]">
+    <div className="w-max h-[310px]  bg-white p-[15px]">
       <div className="bg-gray-200 rounded-l  h-[250px] w-[250px]">
         <img
           className="h-[240px] w-[240px] m-auto object-contain  mix-blend-multiply"
