@@ -9,8 +9,8 @@ const Login = () => {
     removeSidebar();
   }, []);
   return (
-    <section className="w-screen h-[90vh] flex justify-center items-center">
-      <div className="w-[400px] flex flex-col ">
+    <section className="w-screen h-[90vh] flex justify-center  items-center">
+      <div className="w-[500px] flex flex-col bg-white  px-10 pb-10 rounded-2xl shadow-md">
         <p className="text-4xl font-bold mx-auto my-5">Login</p>
         <TextField
           sx={{ marginBottom: "2rem" }}

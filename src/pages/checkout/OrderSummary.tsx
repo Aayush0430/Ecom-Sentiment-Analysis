@@ -5,7 +5,7 @@ import { Button, Divider } from "@mui/material";
 
 const OrderSummary = () => {
   return (
-    <div className="w-[40%] ml-14 bg-white px-10 pb-10 rounded-2xl shadow">
+    <div className="w-[40%] ml-14 bg-white px-10 pb-10 rounded-2xl shadow-md">
       <p className="text-xl font-bold my-4 poppins">Order Summary</p>
       <div className="products-price">
         <div className="orderproducts">
