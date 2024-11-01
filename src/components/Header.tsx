@@ -23,7 +23,7 @@ const Header = () => {
     <>
       <nav className="navbar">
         <Button onClick={handleBurgerclick} sx={{ color: "white" }}>
-          <MenuIcon sx={{ cursor: "pointer" }} />
+          <MenuIcon sx={{ cursor: "pointer", color: "black" }} />
         </Button>
 
         <div className="navbar-brand">

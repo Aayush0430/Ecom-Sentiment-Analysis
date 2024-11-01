@@ -1,14 +1,20 @@
 .display-image {
   height: 300px;
-  background: #edd85e;
-  width: 90%;
-  margin-inline: auto;
-  margin-block: 1rem;
-  border-radius: 1rem;
+  background: #dbcbce;
+  /* background: linear-gradient(120deg, #7367b4, #7d71c5, #9586eb); */
+  background: linear-gradient(120deg, #d1bdc1, #dbcbce);
+  /* margin-block: 1rem; */
+  /* border-radius: 1rem; */
 }
-.landing-text {
-  font-family: "Carter One", system-ui;
-  color: black;
+.landing-text1 {
+  /* font-family: "Carter One", system-ui; */
+  /* color: #eef7ff; */
+  color: white;
   /* font-family: "Bebas Neue", sans-serif; */
   /* font-family: "Rubik Wet Paint", system-ui; */
+}
+
+.landing-text2 {
+  /* color: #eef7ff; */
+  color: white;
 }

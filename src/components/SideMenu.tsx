@@ -215,16 +215,20 @@ const SideMenu = () => {
           <p className="text-xl font-bold ">Account</p>
         </div>
         <Link href="/login">
-        <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-          <p className="">Login</p>
-          <KeyboardArrowRightIcon sx={{ fontSize: "1.4rem", color: "gray" }} />
-        </div>
+          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+            <p className="">Login</p>
+            <KeyboardArrowRightIcon
+              sx={{ fontSize: "1.4rem", color: "gray" }}
+            />
+          </div>
         </Link>
         <Link href="/signup">
-        <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
-          <p className="">Sign up</p>
-          <KeyboardArrowRightIcon sx={{ fontSize: "1.4rem", color: "gray" }} />
-        </div>
+          <div className="category pl-14 pr-7 py-3 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
+            <p className="">Sign up</p>
+            <KeyboardArrowRightIcon
+              sx={{ fontSize: "1.4rem", color: "gray" }}
+            />
+          </div>
         </Link>
         <div className="category pl-14 pr-7 py-3 mb-10 text-md flex items-center justify-between cursor-pointer transition-all ease duration-200 hover:bg-[rgb(235,235,235)]">
           <p className="">Logout</p>

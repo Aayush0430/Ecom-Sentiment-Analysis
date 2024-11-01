@@ -1,11 +1,15 @@
 "use client";
 import React, { useEffect } from "react";
-import { removeSidebar } from "@/index";
+import { Card, removeSidebar } from "@/index";
 const page = () => {
   useEffect(() => {
     removeSidebar();
   }, []);
-  return <div></div>;
+  return (
+    <div>
+      <Card />
+    </div>
+  );
 };
 
 export default page;
