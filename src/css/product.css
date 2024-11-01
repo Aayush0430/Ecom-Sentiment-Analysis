@@ -40,12 +40,12 @@ section h1{
     color: var(--text);
     margin-bottom: 10px;
 }
-.flex{
+/* .flex{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-}
+} */
 .main-price{
     font-size: 30px;
     font-family: "fraunces";
