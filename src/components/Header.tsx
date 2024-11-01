@@ -4,6 +4,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SideMenu from "./SideMenu";
 const Header = () => {
   function handleBurgerclick() {
@@ -27,7 +28,7 @@ const Header = () => {
         </Button>
 
         <div className="navbar-brand">
-          <a href="#">UrAnswer</a>
+          <a href="/">UrAnswer</a>
         </div>
 
         <div className="navbar-search">
@@ -41,7 +42,9 @@ const Header = () => {
             <SearchIcon />
           </button>
         </div>
-
+        <Link href="/cart">
+          <ShoppingCartIcon />
+        </Link>
         {/* <ul className={navbar-links ${isMenuOpen ? 'active' : ''}}>
       <li><a href="home">Home</a></li>
       <li><a href="services">Services</a></li>

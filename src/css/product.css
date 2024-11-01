@@ -45,9 +45,9 @@ section h1 {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-} */
-.main-price {
-  font-size: 30px;
-  font-family: "fraunces";
-  color: var(--green);
+}
+.main-price{
+    font-size: 30px;
+    font-family: "fraunces";
+    color: var(--green);
 }
