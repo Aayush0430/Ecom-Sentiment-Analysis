@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
   //   console.log(reqbody);
   const userExists = await User.findOne({ username });
   if (userExists) {
-    return NextResponse.json({ msg: "user already Exists" });
+    return NextResponse.json({ msg: "user already Exists", statusCode: 204 });
   }
 
   //hasing
@@ -29,5 +29,4 @@ export async function POST(request: NextRequest) {
     savedUser,
     statusCode: 200,
   });
-  return NextResponse.json({ msg: "signup api called" });
 }

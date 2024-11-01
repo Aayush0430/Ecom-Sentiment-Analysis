@@ -12,13 +12,13 @@ const OrderSummary = () => {
           <SummaryCart />
           <SummaryCart />
         </div>
-        <div className="pricing w-[95%]" style={{ fontSize: ".85rem" }}>
-          <div className="subtotal mb-3 w-full flex justify-between">
+        <div className="pricing w-[95%] " style={{ fontSize: ".85rem" }}>
+          <div className="subtotal mb-3 w-full flex justify-between poppins">
             <p>Subtotal</p>
             <p className="">Rs. 400</p>
           </div>
 
-          <div className="Shipping mb-3 w-full flex justify-between">
+          <div className="Shipping mb-3 w-full flex justify-between poppins">
             <p>Subtotal</p>
             <p className="">Rs. 400</p>
           </div>
@@ -27,7 +27,7 @@ const OrderSummary = () => {
             style={{ fontSize: "1rem" }}
             className="total mb-3 w-full flex justify-between"
           >
-            <p className="font-bold">Total</p>
+            <p className="font-bold ">Total</p>
             <p className="font-bold">Rs. 400</p>
           </div>
         </div>

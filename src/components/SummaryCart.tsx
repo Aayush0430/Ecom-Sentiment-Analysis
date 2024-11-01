@@ -25,7 +25,7 @@ const SummaryCart = () => {
                 Quantity: <b>4</b>
               </p>
               <p className="text-xs">
-                Total: <b>Rs. 5000</b>
+                Total: <b className="">Rs. 500000</b>
               </p>
             </div>
           </div>

@@ -190,22 +190,30 @@ const SideMenu = () => {
           <Checkbox
             checked={lowHigh === "highToLow"}
             onChange={() => handleLowHighChage("highToLow")}
+            id="highToLow"
           />
-          High To Low
+          <label htmlFor="highToLow" className="cursor-pointer">
+            High To Lows
+          </label>
         </div>
         {/* price low to high  */}
         <div className="stock-section ml-4">
           <Checkbox
             checked={lowHigh === "lowToHigh"}
             onChange={() => handleLowHighChage("lowToHigh")}
+            id="lowToHigh"
           />
-          Low to High
+          <label htmlFor="lowToHigh" className="cursor-pointer">
+            Low to High
+          </label>
         </div>
         {/* availabe in stock  */}
         <p className="stock-text pl-7 pt-3 pb-1 text-md font-bold">Stock</p>
         <div className="stock-section ml-4">
-          <Checkbox />
-          Available in Stock
+          <Checkbox id="available" />
+          <label htmlFor="available" className="cursor-pointer">
+            Available in Stock
+          </label>
         </div>
         <Divider sx={{ marginBlock: "1.1rem" }} />
         {/* account */}

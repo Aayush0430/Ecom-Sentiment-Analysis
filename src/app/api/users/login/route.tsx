@@ -13,11 +13,11 @@ export async function POST(request: NextRequest) {
 
   const userCheck = await User.findOne({ username });
   if (!userCheck) {
-    return NextResponse.json({ msg: "user not found" });
+    return NextResponse.json({ msg: "user not found", statusCode: 204 });
   }
   const hashedCorrect = await bcryptjs.compare(password, userCheck.password);
   if (!hashedCorrect) {
-    return NextResponse.json({ msg: "password incorrect" });
+    return NextResponse.json({ msg: "password incorrect", statusCode: 204 });
   }
   const loggedInUser = {
     userId: userCheck._id,
@@ -27,6 +27,6 @@ export async function POST(request: NextRequest) {
   return NextResponse.json({
     msg: "Logging In",
     loggedInUser,
-    statuscode: 200,
+    statusCode: 200,
   });
 }

@@ -11,6 +11,7 @@ import OrderSummary from "./pages/checkout/OrderSummary";
 import SummaryCart from "./components/SummaryCart";
 import Product from "./components/Product";
 import { removeSidebar } from "./helper/removeSidebar";
+import { notify } from "./helper/notify";
 
 // import Card from "@/components/Card"
 export {
@@ -25,6 +26,7 @@ export {
   ContactInformation,
   OrderSummary,
   removeSidebar,
+  notify,
   Card,
   products,
 };
