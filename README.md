@@ -1,4 +1,4 @@
-check out the project: <a>https://ecom-deploy-fa91.onrender.com/</a>
+check out the project: <a>https://ecom-deploy-fa91.onrender.com/</a><br>
 some snapshots from the project!
 ![image](https://github.com/user-attachments/assets/678b2593-fe22-405d-8746-5b2a6b5a21c3)
 ![image](https://github.com/user-attachments/assets/d2b9b81b-4bc6-4103-a162-e8818c9ff64c)
